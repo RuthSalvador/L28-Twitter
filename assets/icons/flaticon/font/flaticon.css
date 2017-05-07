@@ -18,7 +18,7 @@
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-  font-family: Flaticon;
+  font-family: "Flaticon";
   font-size: 20px;
   font-style: normal;
 }
@@ -29,12 +29,12 @@
 .flaticon-check:before {
   content: "\f101";
 }
-.flaticon-feather-in-a-square:before {
+.flaticon-feather-in-a-square:before { /*quill*/
   content: "\f102";
 }
-.flaticon-music:before {
+.flaticon-music:before { /*bell*/
   content: "\f103";
 }
-.flaticon-shape:before {
+.flaticon-shape:before { /*home*/
   content: "\f104";
 }

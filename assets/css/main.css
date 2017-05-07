@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  color: #66757f;
+  font-family: Arial;
+}
+
+header {
+  border-bottom: 1px #66757f solid;
+}
+
+div, span, input {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 5%;
+  overflow: hidden;
+
+}
+
+.subcontainer {
+  width: 33.33%;
+  display: table;
+}
+.small {
+  font-size: 0.8rem;
+}
+
+.left {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+  color: #1da1f2;
+  font-size: 1.2rem;
+  height: 35px;
+}
+
+.image-header {
+  width: 35px;
+  height: 35px;
+}
+
+.image-header img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.twittear {
+  background-color: #1da1f2;
+  color: #ffffff;
+  padding: 3.5px 14px;;
+  border-radius: 3.5px;
+  height: 35px;
+
+}
+
+.search {
+  width: 189px;
+  position: relative;
+}
+
+.buscar {
+  border-radius: 42px;
+  border: 1px #c0c2c3 solid;
+  height: 35px;
+  width: 100%;
+}
+
+.search .icon-search {
+  position: absolute;
+  right: 7px;
+  top: 8.75px;
+}
