@@ -28,19 +28,21 @@ function addTweetsFriends(){
   var spanRetweetText = document.createElement("span");
   var spanHeartText = document.createElement("span");
 
-  divPost.setAttribute("class","post small left");
+  divPost.setAttribute("class","post left");
   image.setAttribute("class","radius left");
   image.setAttribute("src","assets/img/"+ friendsTwitter[i].imagen + ".jpg");
   image.setAttribute("alt",friendsTwitter[i].nameFriend + " profile picture");
   content.setAttribute("class","content");
-  spanFriend.setAttribute("class","name-friend");
+  spanFriend.setAttribute("class","name-friend small");
   spanFriend.innerHTML = friendsTwitter[i].nameFriend + " ";
+  spanUsuario.setAttribute("class","small");
   spanUsuario.innerHTML = friendsTwitter[i].usuario;
   spanTime.innerHTML = " &#8231; "+ friendsTwitter[i].time;
+  spanTime.setAttribute("class","small");
   spanDown.setAttribute("class","icon-down right");
-  divTweet.setAttribute("class","tweet-friend");
+  divTweet.setAttribute("class","tweet-friend small");
   divTweet.innerHTML = friendsTwitter[i].tweetFriend;
-  spanBlue.setAttribute("class","blue");
+  spanBlue.setAttribute("class","blue small");
   spanBlue.innerHTML = friendsTwitter[i].tweetBlue;
   spanReply.setAttribute("class","big icon-reply");
   spanRetweet.setAttribute("class","big icon-retweet");
