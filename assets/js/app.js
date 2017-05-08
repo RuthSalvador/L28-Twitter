@@ -1,11 +1,11 @@
 /** add tweets friends **/
 window.addEventListener("load", addTweetsFriends);
 
-var friendsTwitter = [{imagen:"e",nameFriend:"E! Latin America",usuario:"@EonlineLatino",time:" 5 min",tweetFriend:"Madonna se preparó para una gran batalla ",tweetBlue:"#AlfombraRojaE! #METgala instagram.com/p/BTkraPNjP5V/",},
-                      {imagen:"stalker",nameFriend:"Stalker",usuario:"@SoyStalkeador",time:" 27 jun. 2016",tweetFriend:"Situación Sentimental: Con hambre.",tweetBlue:""},
-                      {imagen:"frases-de-canciones",nameFriend:"Frases de Canciones",usuario:"@PhrasesMusicES", time:" 8 min",tweetFriend:"Serás feliz me dijo la vida, pero primero te enseñaré a ser fuerte.",tweetBlue:""},
-                      {imagen:"poemas-escritos",nameFriend:"Poemas Escritos.",usuario:"@PoemasEscritos",time:"26 abr.",tweetFriend:"Usted es el único...",tweetBlue:""},
-                      {imagen:"frases-de-canciones",nameFriend:"Frases de Canciones",usuario:"@PhrasesMusicES", time:" 9 min",tweetFriend:'"No dejes para hoy, lo que puedes hacer mañana"- El Vago.',tweetBlue:""}
+var friendsTwitter = [{imagen:"e",nameFriend:"E! Latin America",usuario:"@EonlineLatino",time:" 5 min",tweetFriend:"Madonna se preparó para una gran batalla ",tweetBlue:"#AlfombraRojaE! #METgala instagram.com/p/BTkraPNjP5V/",reply:"",retweet:"",like:""},
+                      {imagen:"stalker",nameFriend:"Stalker",usuario:"@SoyStalkeador",time:" 27 jun. 2016",tweetFriend:"Situación Sentimental: Con hambre.",tweetBlue:"",reply:"8",retweet:"5,1K",like:"2,1K"},
+                      {imagen:"frases-de-canciones",nameFriend:"Frases de Canciones",usuario:"@PhrasesMusicES", time:" 8 min",tweetFriend:"Serás feliz me dijo la vida, pero primero te enseñaré a ser fuerte.",tweetBlue:"",reply:"",retweet:"15",like:"17"},
+                      {imagen:"poemas-escritos",nameFriend:"Poemas Escritos.",usuario:"@PoemasEscritos",time:"26 abr.",tweetFriend:"Usted es el único...",tweetBlue:"",reply:"",retweet:"101",like:"99"},
+                      {imagen:"frases-de-canciones",nameFriend:"Frases de Canciones",usuario:"@PhrasesMusicES", time:" 9 min",tweetFriend:'"No dejes para hoy, lo que puedes hacer mañana"- El Vago.',tweetBlue:"",reply:"1",retweet:"15",like:"10"}
                       ];
 
 function addTweetsFriends(){
@@ -24,6 +24,9 @@ function addTweetsFriends(){
   var spanReply = document.createElement("span");
   var spanRetweet = document.createElement("span");
   var spanHeart = document.createElement("span");
+  var spanReplyText = document.createElement("span");
+  var spanRetweetText = document.createElement("span");
+  var spanHeartText = document.createElement("span");
 
   divPost.setAttribute("class","post small left");
   image.setAttribute("class","radius left");
@@ -42,6 +45,12 @@ function addTweetsFriends(){
   spanReply.setAttribute("class","big icon-reply");
   spanRetweet.setAttribute("class","big icon-retweet");
   spanHeart.setAttribute("class","big icon-heart");
+  spanReplyText.setAttribute("class","small");
+  spanRetweetText.setAttribute("class","small");
+  spanHeartText.setAttribute("class","small");
+  spanReplyText.innerHTML = friendsTwitter[i].reply;
+  spanRetweetText.innerHTML = friendsTwitter[i].retweet;
+  spanHeartText.innerHTML = friendsTwitter[i].like;
 
   postContainer.appendChild(divPost);
   divPost.appendChild(image);
@@ -55,6 +64,8 @@ function addTweetsFriends(){
   content.appendChild(spanReply);
   content.appendChild(spanRetweet);
   content.appendChild(spanHeart);
-
+  spanReply.appendChild(spanReplyText);
+  spanRetweet.appendChild(spanRetweetText);
+  spanHeart.appendChild(spanHeartText);
   }
 }

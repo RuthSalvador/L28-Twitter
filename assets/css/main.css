@@ -207,6 +207,14 @@ div, span, input {
 
 .big {
   font-size: 1.3rem;
-  margin-top: 14px;
-  margin-right: 49px;
+  width: 70px;
+  float: left;
+  position: relative;
+}
+
+.big .small {
+  position: relative;
+  bottom: 3px;
+  left: 7px;
+  font-family: arial;
 }
