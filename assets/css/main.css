@@ -183,6 +183,7 @@ div, span, input {
 .post {
   padding: 14px;
   border-bottom:1px #c0c2c3 solid;
+  width: 100%;
 }
 
 .post img {
